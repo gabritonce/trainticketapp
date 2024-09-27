@@ -1,0 +1,44 @@
+<div class="container"  >
+
+
+	<div class="ticket airline " *ngFor="let ticket of ticket" >
+		<div class="top">
+			<h1>Train Ticket</h1>
+			<div class="big">
+				<p class="from">{{ticket.trainName}}</p>
+			
+			</div>
+			<div class="top--side">
+				<i class="fas fa-plane"></i>
+                <br>
+				<p>{{ticket.departureStationName}}</p>
+				<p>{{ticket.arrivalStationName}}</p>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="column">
+				<div class="row row-1">
+					<p><span>Train Number</span>{{ticket.trainNo}}</p>
+					
+				</div>
+				<div class="row row-2">
+	
+					<p class="row--center"><span>Departure Time</span>{{ticket.departureTime}}</p>
+					<p class="row--right"><span>Arrival Time</span>{{ticket.arrivalTime}}</p>
+				</div>
+				<div class="row row-3">
+					<p><span>Passenger</span>{{ticket.passengerName}}</p>
+					<p class="row--center"><span>Seat</span>{{ticket.seatNo}}</p>
+	
+
+				</div>
+                
+			</div>
+			<div class="bar--code"></div>
+		</div>
+		
+	</div>
+
+	
+
+</div>

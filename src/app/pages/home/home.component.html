@@ -1,0 +1,122 @@
+
+<div class="container-img">
+<div class="container">
+    <div class="row d-flex justify-content-center align-items-center form-container">
+        <div>
+            <div class=" text-black"  >
+                <div class="">
+                    
+                    <p class="text-center title h1 fw-bold mb-2 mx-1 mx-md-4 mt-1">Book Your Ticket</p>
+                    <div >
+                        <div > 
+                            <form class="form "> 
+                                <div class="">
+                                    <div class="">
+                                    
+                                        <select [(ngModel)]="fromStationId" name="fromStationId" id="" class="form-select">
+                                            <option class="option" value="0">From Station</option>
+                                            @for (item of stationList; track $index) {
+                                                <option [value]="item.stationID">{{item.stationName}}</option>
+                                            }
+                                        </select>
+                                 
+                                    </div>
+                                    <br>
+                                
+                                    <div class="">
+
+                                    
+                                        
+                                        <select [(ngModel)]="toStationId" name="toStationId"  id="" class="form-select">
+                                            <option value="0">To Station</option>
+                                            @for (item of stationList; track $index) {
+                                                <option [value]="item.stationID">{{item.stationName}}</option>
+                                            }
+            
+                                        </select>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="d-flex  ">
+                                    <div class="input-wrapper d-flex">
+                                        
+                                        <input type="date" [(ngModel)]="dateOfTravel" name="dateOfTravel8"  class="form-control" /> 
+                                       
+                              
+                                    </div>
+                                    <button type="button" class="btn btn-primary" (click)="onSearch()">Search</button>      
+                                </div> 
+                              
+                            </form> 
+                        </div>
+                        <div class="col-md-10 pt-3 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+                     
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<hr>
+<h1>Offers and Services</h1>
+
+<div class="container-card">
+
+<div class="card" style="width: 22rem;">
+    <img src="../../../assets/img/1.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Online Ticket Booking</p>
+    </div>
+  </div>
+
+  <div class="card" style="width: 22rem;">
+    <img   src="../../../assets/img/Progetto senza titolo - 2024-09-26T220656.864.png"  class="card-img-top" alt="..."> 
+    <div class="card-body">
+      <p class="card-text">Real-Time Train Tracking</p>
+    </div>
+  </div>
+
+  <div class="card" style="width: 22rem;">
+    <img src="../../../assets/img/Progetto senza titolo - 2024-09-26T220843.189.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Special Offers and Promotions</p>
+    </div>
+  </div>
+
+
+
+
+</div>
+
+
+<div class="container-card">
+
+    <div class="card" style="width: 22rem;">
+        <img src="../../../assets/img/DALL·E 2024-09-26 21.39.44 - A clean and professional service card for a railway website featuring an online ticket booking system. The image shows a mobile device with a ticket b.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">24/7 Customer Support.</p>
+        </div>
+      </div>
+    
+      <div class="card" style="width: 22rem;">
+        <img  src="../../../assets/img/Progetto senza titolo - 2024-09-26T221037.203.png" class="card-img-top" alt="..."> 
+        <div class="card-body">
+          <p class="card-text">Loyalty Program</p>
+        </div>
+      </div>
+    
+      <div class="card" style="width: 22rem;">
+        <img src="../../../assets/img/2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Journey Planner</p>
+        </div>
+      </div>
+    
+    
+    
+    
+    </div>

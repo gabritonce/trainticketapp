@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+.form-control {
+    border: 1px solid black !important;
+}
+.form-select {
+    border: 1px solid black !important;
+}
+
+.rounded-btn {
+    border-radius: 20px;
+}
+.navbar {
+    background-color: #1e6a99 !important;
+    color: white !important;
+   font-size: 20px;
+   font-weight: bold;
+   margin: 0;
+
+  
+}
+
+.nav-link:hover{
+  text-decoration: underline white;
+
+}
+.card-body {
+    border: 1px solid gray !important;
+}
+
+
+.modal-content{
+    background-color: #1e6a99;
+    color: white;
+    border-radius: 10px;
+    border: black 1px solid;
+}
+ input {
+    /* Reset */
+    -webkit-box-shadow: 1px 0px 10px -6px rgba(66, 68, 90, 1);
+-moz-box-shadow: 1px 0px 10px -6px rgba(66, 68, 90, 1);
+box-shadow: 1px 0px 10px -6px rgba(66, 68, 90, 1);
+background-color: rgba(255, 255, 255, 0.847);
+ 
+    padding: 1em;
+    border-radius: 0.7em;
+   color: black;
+    cursor: pointer;
+ }
+
+  .btn-danger{
+    background-color: brown;
+  }
+
+  .btn-success{
+    background-color: darkgreen;
+  }
+
+.logoff-item{
+    background-color: brown;
+    border-radius: 0.4em;
+    border: black 0.5px solid;
+    box-shadow: 1px 0px 10px -6px rgba(66, 68, 90, 1);
+
+  
+cursor: pointer;
+
+}
+  .logoff{
+    color: white;
+  
+  }

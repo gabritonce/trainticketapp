@@ -1,0 +1,98 @@
+.card{
+ 
+
+    border-radius: 10px;
+    border: black 1px solid;
+    margin: 1em;
+}
+
+.card-header{
+    background-color: #1e6a99;
+}
+
+.btn {
+
+    background: #015087;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    
+   }
+   
+   button:hover {
+    color: black;
+   }
+   
+   button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
+
+.container-info{
+    background-color: #1e6a99d3;
+}
+
+.btn-danger{
+    background-color: brown;
+  }
+
+  
+.btn-success{
+    background-color: darkgreen;
+}
+
+.modal-header{
+  background-color: #207fba;
+    color: white;   
+}
+
+.modal-content{
+   font-weight: bold;
+    border-radius: 10px;
+    border: black 1px solid;
+    -webkit-box-shadow: 1px 0px 10px -6px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 1px 0px 10px -6px rgba(66, 68, 90, 1);
+    box-shadow: 1px 0px 10px -6px rgba(66, 68, 90, 1);
+}
+
+input {
+    /* Reset */
+  -webkit-box-shadow: 1px 0px 10px -6px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 1px 0px 10px -6px rgba(66, 68, 90, 1);
+  box-shadow: 1px 0px 10px -6px rgba(66, 68, 90, 1);
+  background-color: rgba(255, 255, 255, 0.847);
+  border: 0;
+
+    border-radius: 0.7em;
+   color: black;
+    cursor: pointer;
+    /* Remove IE arrow */
+    }
+
+.container-fluid{
+    margin-top: 3.9em;
+    
+}
+    .container-fluid-2{
+        margin-bottom: 50em;
+    }
